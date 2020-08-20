@@ -22,7 +22,7 @@ cal=Tk()
 cal.title("Calculator")
 operator=""
 text_input=StringVar()
-cal.configure(bg="White")
+cal.configure()
 
 
 text_Dislpay= Entry(cal,font=('arial',20,'bold'), textvariable=text_input,bd=30,insertwidth=4,bg="white",justify='right').grid(columnspan=4)
@@ -45,7 +45,7 @@ btnEquals=Button(cal,padx=12,pady=10,bd=8,fg="black",font=('arial',20,'bold'),te
 Divide=Button(cal,padx=12,pady=10,bd=8,fg="black",font=('arial',20,'bold'),text="/",command=lambda :btnClicK("/")).grid(row=4,column=3)
 
 rbd=Radiobutton(cal,padx=12,pady=10,text="Dark Mode",value=1,command=dmode)
-rbd.place(x=300,y=320)
+rbd.place(x=240,y=360)
 
 
 cal.mainloop()
